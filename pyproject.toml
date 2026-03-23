@@ -3,7 +3,7 @@ name = "etems"
 authors = [
     { name = "Monika", email = "monikarajan2010@gmail.com"}
 ]
-description = "Expense Management"
+description = "Travel Expense Management"
 requires-python = ">=3.14"
 readme = "README.md"
 dynamic = ["version"]

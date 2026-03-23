@@ -1,7 +1,7 @@
 app_name = "etems"
 app_title = "Etems"
 app_publisher = "Monika"
-app_description = "Expense Management"
+app_description = "Travel Expense Management"
 app_email = "monikarajan2010@gmail.com"
 app_license = "mit"
 
