@@ -135,4 +135,21 @@ The typical process for claiming travel expenses includes:
 
     Reimbursement of approved expenses, usually via payroll or direct deposit
 
+Travel Request
+    └── Travel Itinerary (planned before travel)
 
+Expense Claim
+    └── Expense Details (actual bills after travel)
+    └── Settlement Details (reconciliation after travel)
+
+
+For advance :
+Advance Given vs Actual Spent = Payable or Recoverable
+
+Now how we are going to store that advance amount ?? how ?? where ?? 
+Travel Request
+├── advance_requested  (by employee)
+├── advance_approved   (by finance)
+└── Travel Itinerary (child)
+
+two fields can be maintained for knowing about amount requested by the employee and the amount given by the finance team -> this approved amount will be carried forward for further calculations
