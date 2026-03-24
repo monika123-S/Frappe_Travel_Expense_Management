@@ -38,3 +38,38 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 ### License
 
 mit
+
+Travel Expense Management:
+
+Flow of the system 
+Employee creates Travel Request in advance so that the superior approves the request and would also able to get advance amount if required and then after the travel the employee makes the expense claim to get the  claimed about as from the company 
+
+
+Let's see how this works in the actual business flow :
+how empolyee creates Travel Request and with what data in the company :
+
+frist,we want personal informations about the employee  
+Section 1: Personal Information
+    Full name 
+    Branch
+    Job Title
+    Department
+    Phone number 
+    Email address. 
+
+Section 2 : Travel Details
+Travel itinerary with:
+Dates (start and end) 
+Destinations
+Reason for travel
+
+Section 3: Accommodation and Transportation
+stimated budget for expenses like:
+Flights
+Hotels
+Daily Allowances
+
+Section 4 : Support required from the company, such as:
+Advance Amount if required
+
+
