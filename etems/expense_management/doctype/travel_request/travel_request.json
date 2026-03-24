@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-24 12:48:14.092227",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "travel_details_tab",
+  "section_break_vd2i",
+  "amended_from",
+  "user",
+  "employee_name",
+  "column_break_cnzw",
+  "branch",
+  "department",
+  "section_break_hwuj",
+  "from_date",
+  "to_date",
+  "column_break_uyeh",
+  "purpose_of_travel",
+  "destination",
+  "travel_itinerary_section",
+  "table_sjwi",
+  "total_estimated_cost",
+  "advance_details_tab",
+  "advance_amount_details_section",
+  "is_advance_required",
+  "advance_requested",
+  "advance_approved"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vd2i",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "User",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cnzw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hwuj",
+   "fieldtype": "Section Break",
+   "label": "Travel Details"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uyeh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "label": "Destination"
+  },
+  {
+   "fieldname": "purpose_of_travel",
+   "fieldtype": "Data",
+   "label": "Purpose of Travel"
+  },
+  {
+   "fieldname": "travel_itinerary_section",
+   "fieldtype": "Section Break",
+   "label": "Travel Itinerary "
+  },
+  {
+   "fieldname": "table_sjwi",
+   "fieldtype": "Table",
+   "options": "Travel Itinerary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_estimated_cost",
+   "fieldtype": "Currency",
+   "label": "Total Estimated Cost",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "travel_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Travel Details"
+  },
+  {
+   "fieldname": "advance_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Advance Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_advance_required",
+   "fieldtype": "Check",
+   "label": "Is Advance Required"
+  },
+  {
+   "depends_on": "eval:doc.is_advance_required",
+   "fieldname": "advance_requested",
+   "fieldtype": "Currency",
+   "label": "Advance Requested",
+   "mandatory_depends_on": "eval:doc.is_advance_required"
+  },
+  {
+   "depends_on": "eval:doc.is_advance_required",
+   "fieldname": "advance_approved",
+   "fieldtype": "Currency",
+   "label": "Advance Approved"
+  },
+  {
+   "fieldname": "advance_amount_details_section",
+   "fieldtype": "Section Break",
+   "label": "Advance Amount Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-03-24 23:38:11.174856",
+ "modified_by": "Administrator",
+ "module": "Expense Management",
+ "name": "Travel Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
